@@ -1,0 +1,4 @@
+fileupload:
+  root-path: /opt/file
+  download: 服务器的路径
+

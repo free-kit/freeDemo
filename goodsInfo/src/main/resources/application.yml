@@ -1,0 +1,21 @@
+server:
+  port: 8760
+
+spring:
+  application:
+    name: goods
+  profiles:
+   active: 'test'
+
+
+eureka:
+  server:
+    prefer-ip-address: false
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
+

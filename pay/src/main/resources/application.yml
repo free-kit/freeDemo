@@ -1,0 +1,17 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    fetch-registry: false
+
+spring:
+  freemarker:
+    prefer-file-system-access: false
+  application:
+    name: dao
+
